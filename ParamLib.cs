@@ -5,12 +5,13 @@ namespace ParamLib
     public static class ParamLib
     {
         private static AvatarPlayableController GetLocalPlayableController() => VRCPlayer.field_Internal_Static_VRCPlayer_0
-            ?.field_Private_VRC_AnimationController_0
+            ?.field_Private_AnimatorControllerManager_0
             ?.field_Private_AvatarAnimParamController_0
             ?.field_Private_AvatarPlayableController_0;
         
         private static AvatarAnimParamController GetLocalAnimParamController() => VRCPlayer.field_Internal_Static_VRCPlayer_0
-            ?.field_Private_VRC_AnimationController_0?.field_Private_AvatarAnimParamController_0;
+            ?.field_Private_AnimatorControllerManager_0
+            ?.field_Private_AvatarAnimParamController_0;
         
         public static void PrioritizeParameter(int paramIndex)
         {
